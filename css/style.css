@@ -32,8 +32,6 @@ a:hover {
 	padding: 50px;
 }
 
-
-
 /*メニュー全体を囲むブロック*/
 #menubar {
 	text-align: center;	/*文字をセンタリング*/
@@ -85,9 +83,11 @@ a:hover {
 	clear: both;
 	/* margin-bottom: 15px; */
 	font-weight: bold;
-	padding: 3px 20px;	/*上下、左右への余白*/
+	/* padding: 3px 20px;	上下、左右への余白 */
 	background: #fff;	/*背景色*/
 	/*border: 1px solid #ccc;*/	/*枠線の幅、線種、色*/
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px -20px;
 	/*border-radius: 10px;*/
 }
 
@@ -116,6 +116,10 @@ a:hover {
 #cv dd{
   /* float: left; */
   margin-left: 120px;
+}
+.me {
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 
