@@ -19,7 +19,8 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 iframe {width: 100%;}
 
 a {
-	color: #666;	/*リンクテキストの色*/
+	/* color: #666;	リンクテキストの色 */
+	color:rgba(0,101,128,1);	/*リンクテキストの色*/
 	transition: 0.3s;	/*マウスオン時の移り変わるまでの時間設定。0.3秒。*/
 }
 a:hover {
@@ -136,4 +137,28 @@ footer a {
 }
 footer .pr {
 	display: block;
+}
+
+
+/* 論文用
+-----------------------------------------------------------------------------*/
+/* .menuList > div:nth-child(2)::after { */
+.award::before {
+	display        : inline-block;       /* インラインボックス定義  */
+	content        : "AWARD";              /* 表示する文字            */
+	background     : #ff0000;            /* 背景色                  */
+	color          : #ffffff;            /* 文字色                  */
+	font-weight    : bold;               /* 太字                    */
+	font-size      : 10pt;               /* ベースの文字サイズ      */
+	letter-spacing : -1px;               /* 文字間隔詰め            */
+	line-height    : 1;                  /* 1行の高さ               */
+	vertical-align : top;                /* 基準の高さ位置          */
+	margin         : 0;                  /* 外余白なし              */
+	padding        : 2px;                /* 反転時の内余白          */
+	transform      : scale(0.6)          /* 文字サイズ変更          */
+					 translateX(20%);    /* 横位置調整              */
+  }
+
+.award a{
+	color: #666;	/*リンクテキストの色*/
 }
