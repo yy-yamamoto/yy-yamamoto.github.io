@@ -83,6 +83,10 @@ a:hover {
 	margin-left: 1em;
 }
 
+nav#menubar{
+	margin-right:  1em;
+}
+
 /*メニュー全体を囲むブロック*/
 #menubar {
 	text-align: center;
@@ -122,6 +126,7 @@ a:hover {
 	text-decoration:none;
 } */
 
+/* fix jump postion */
 section#cv,
 section#research,
 section#publication,
@@ -134,10 +139,15 @@ section#link
 }
 
 #publication ol,
-#publication_japanese ol {
-	padding-left: 40px;
+#publication_japanese ol,
+#link ul
+{
+	/* padding-left: 40px; */
+	padding-left: 20px;
 	padding-bottom: 15px;
+	list-style-position: inside;
 }
+
 
 #contents h2 {
 	clear: both;
@@ -178,7 +188,7 @@ section#link
 	background: #fff;	/*背景色*/
 	/*border: 1px solid #ccc;*/	/*枠線の幅、線種、色*/
 	padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px -20px;
+	/* margin: 0px 0px 0px -20px; */
 	/*border-radius: 10px;*/
 }
 
@@ -187,13 +197,12 @@ section#link
 }
 
 #contents h2 + p,
-
 #contents h3 + p {
 	margin-top: -5px;
 }
 
 
-#cv dl, ul{
+#cv dl, #cv ul{
 	padding: 3px 20px;
 }
 

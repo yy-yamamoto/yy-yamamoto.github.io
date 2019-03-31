@@ -15,7 +15,7 @@ gtag('config', 'UA-136961814-1');
 <title>Yota Yamamoto</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content="Yota Yamamoto, 山本　洋太, special-purpose computers, HORN, electro-holography, digital holography, embedded systems">
+<meta name="keywords" content="Yota Yamamoto, 山本　洋太, special-purpose computers, HORN, electro-holography, electroholography, digital holography, embedded systems">
 <link rel="stylesheet" href="css/style.css">
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -66,6 +66,21 @@ $(function() {
 	})
 });
 </script>
+<script>
+$(window).on('load resize', function(){
+    var w = $(window).width();
+    var x = 500;
+    if (w <= x) {
+				$('#container').css({
+					'padding-top': '10em'
+				});
+    } else {
+        $('#container').css({
+					'padding-top': '5em'
+        });
+    }
+});
+</script>
 
 <!-- <script type="text/javascript" src="js/openclose.js"></script> -->
 <!--[if lt IE 9]>
@@ -77,9 +92,7 @@ $(function() {
 <body id="top">
 
 <header class="site-header">
-	<div>
 	<h1>Yota Yamamoto</h1>
-	</div>
 	<nav id="menubar">
 		<ul class="step">
 			<li><a class="current" href="">Home</a></li>
