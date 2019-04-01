@@ -55,27 +55,20 @@ a:hover {
 	padding-top: 5em;
 }
 
-
+/* Memu bar
+------------------------------------------*/
 .site-header{
 	position: fixed;
-	/* text-align: right; */
 	width: 100%;
 	background: #292929;
-    /* background: #fff; */
-    display: flex;
-    /* padding: 60px 20px; */
-    padding: 5px 0px;
-    position: fixed;
-    justify-content: space-between;
+  display: flex;
+  padding: 5px 0px;
+  position: fixed;
+  justify-content: space-between;
 	width: 100%;
 	z-index: 99;
 }
 
-/* .site-header h1{
-	font-weight: bold;
-	color: #fff;
-	font-size: 80%;
-} */
 .site-header h1{
 	font-weight: bold;
 	color: #fff;
@@ -87,16 +80,11 @@ nav#menubar{
 	margin-right:  1em;
 }
 
-/*メニュー全体を囲むブロック*/
 #menubar {
 	text-align: center;
-	/* font-size: 14px; */
 	font-size: 100%;
-	/* margin-bottom: 40px; */
-	/* overflow: hidden; */
 }
 
-/*メニュー１個あたりの設定*/
 #menubar li {
 	display: inline;
 }
@@ -111,20 +99,95 @@ nav#menubar{
 ,#menubar li a.current 
 {
 	color: #ebe6d6;
-	/* border-bottom: 4px solid #87ceeb; */
 }
-/*マウスオン時、現在表示中、の設定*/
-/* #menubar li a:hover */
-/* ,#menubar li.current a  */
-/* {
-	color: #87ceeb;
-	border-bottom: 4px solid #87ceeb;
-} */
 
-/* #menubar li a:visited {
-	color: #666;
-	text-decoration:none;
-} */
+#nav_toggle{
+	display: none;
+}
+
+@media screen and (max-width: 820px) { 
+	nav#menubar{
+		display: none;
+		position: absolute;
+		/* top:72px; */
+		top:50px;
+		/* top: 1em; */
+		width: 100%;
+		/* background: #292929; */
+		background-color: rgba(41, 41, 41, 0.90);
+		left: 0;
+	}
+	header nav ul{
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+	header nav ul li{
+		margin: 0 auto;
+		text-align: center;
+		border-bottom: 1px solid #fff;
+	}
+	header nav ul li:last-child{
+		border: none;
+	}
+	header nav ul li a{
+		display: block; 
+	}
+}
+
+@media screen and (max-width: 820px){	
+	/*開閉ボタン*/
+	#nav_toggle{
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		top: 4px;
+		z-index: 100;
+		margin-right: 1em;
+	}
+	#nav_toggle div {
+		position: relative;
+	}
+	#nav_toggle span{
+		display: block;
+		height: 3px;
+		background: #fff;
+		position:absolute;
+		width: 100%;
+		left: 0;
+		-webkit-transition: 0.5s ease-in-out;
+		-moz-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;	
+	}
+	#nav_toggle span:nth-child(1){
+		top:0px;
+	}
+	#nav_toggle span:nth-child(2){
+		top:12px;
+	}
+	#nav_toggle span:nth-child(3){
+		top:24px;
+	}
+	
+	/*開閉ボタンopen時*/
+	.open #nav_toggle span:nth-child(1) {
+			top: 12px;
+		   -webkit-transform: rotate(135deg);
+			-moz-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+		.open #nav_toggle span:nth-child(2) {
+			width: 0;
+			left: 50%;
+		}
+		.open #nav_toggle span:nth-child(3) {
+			top: 12px;
+			-webkit-transform: rotate(-135deg);
+			-moz-transform: rotate(-135deg);
+			transform: rotate(-135deg);
+		}
+}
 
 /* fix jump postion */
 section#cv,
@@ -138,37 +201,33 @@ section#link
     margin-top: -3em;
 }
 
+
+
 #publication ol,
 #publication_japanese ol,
 #link ul
 {
-	/* padding-left: 40px; */
 	padding-left: 20px;
+	padding-right: 20px;
 	padding-bottom: 15px;
 	list-style-position: inside;
 }
-
 
 #contents h2 {
 	clear: both;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	/* color: #fff; */
-	padding: 5px 20px;
+	padding: 5px 10px;
+	margin-left: 10px;
+		margin-right: 10px;
 	/* background: #87ceeb; */
 	/* border-radius: 10px; */
 	font-weight: bold;
 	border-bottom: 2px solid #ccc;
 }
-/* #contents h2 {
-	clear: both;
-	margin-bottom: 15px;
-	color: #fff;		
-	padding: 5px 20px;
-	background: #87ceeb;
-	border-radius: 10px;
-	font-weight: bold;
-} */
+
+
 
 #contents h3 {
 	clear: both;
@@ -201,7 +260,8 @@ section#link
 	margin-top: -5px;
 }
 
-
+/* C.V. 
+-------------------------------------------*/
 #cv dl, #cv ul{
 	padding: 3px 20px;
 }
@@ -232,16 +292,28 @@ section#link
 	/* width: 5em; */
 }
 
+@media screen and (max-width: 820px) { 
+	#cv dl > dd{
+		margin-left: 1em;
+	}
+	#cv dl > dt{
+		float: none;
+  }
+	#cv dl dd dd{
+		margin-left: 1em;
+	}
+}
 
 
-/* 論文用
+
+
+/* 論文用 装飾
 ----------------------------------------------------------------------*/
 .me {
 	text-decoration: underline;
 	font-weight: bold;
 }
 
-/* .menuList > div:nth-child(2)::after { */
 .award::before {
 	display        : inline-block;
 	content        : "AWARD";
@@ -254,9 +326,9 @@ section#link
 	vertical-align : top;            
 	margin         : 0;              
 	padding        : 2px;            
-	transform      : scale(0.6)      
-					 translateX(20%);
-  }
+	transform      : scale(0.7)      
+					 translateX(10%);
+}
 
 .award a{
 	color: #666;
