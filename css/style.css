@@ -77,7 +77,7 @@ a:hover {
 }
 
 nav#menubar{
-	margin-right:  1em;
+	margin: auto 1em auto auto;
 }
 
 #menubar {
@@ -92,7 +92,7 @@ nav#menubar{
 #menubar li a {
 	color:rgb(0, 146, 187);
 	text-decoration: none;
-	padding: 15px 10px;
+	padding: 0px 10px;
 }
 
 #menubar li a:hover
@@ -116,6 +116,9 @@ nav#menubar{
 		/* background: #292929; */
 		background-color: rgba(41, 41, 41, 0.90);
 		left: 0;
+	}
+	#menubar li a {
+		padding: 8px 10px;
 	}
 	header nav ul{
 		display: block;
@@ -142,7 +145,7 @@ nav#menubar{
 		width: 40px;
 		height: 40px;
 		position: relative;
-		top: 4px;
+		top: 5px;
 		z-index: 100;
 		margin-right: 1em;
 	}
