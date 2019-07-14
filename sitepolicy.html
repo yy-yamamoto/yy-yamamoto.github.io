@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136961814-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-136961814-1');
+</script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Yota Yamamoto / 山本 洋太</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Profile of Yota Yamamoto">
+<meta name="keywords" content="Yota Yamamoto, 山本　洋太, special-purpose computers, HORN, electro-holography, electroholography, digital holography, embedded systems">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body id="top">
+
+<header class="site-header">
+	<h1>Yota Yamamoto</h1>
+	<div id="nav_toggle">
+		<div>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<nav id="menubar">
+		<ul class="step">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#cv">C.V.</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="index.html#publication">Publication</a></li>
+			<li><a href="index.html#publication_japanese">Publication (in Japanese)</a></li>
+			<li><a href="index.html#link">Link</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+<div id="container">
+<div id="contents">
+
+
+<section id="sitepolicy">
+	<h2>Site Policy</h2>
+	<p>当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
+		このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。
+		このトラフィックデータは匿名で収集されており、個人を特定するものではありません。
+		この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。
+		この規約に関して、詳しくは<a href="http://www.google.com/analytics/terms/jp.html">こちら</a>、または<a href="https://www.google.com/intl/ja/policies/privacy/partners/">こちら</a>をクリックしてください。</p>
+</section>
+
+
+
+</div><!--/contents-->
+
+<footer>
+<small>Copyright&copy; Yota Yamamoto All Rights Reserved.</small>
+<small><a href=sitepolicy.html>Site Policy.</a></small>
+</footer>
+
+</div><!--/container-->
+</body>
+
+<script>
+//-------------------
+// menebar
+document.querySelector('#nav_toggle')
+	.addEventListener('click', function() {
+    	document.querySelector('header').classList.toggle('open');
+});
+
+//-------------------
+// publication lists
+var pub_lists = document.querySelectorAll('ol.pub_list');
+pub_lists.forEach(function(item, i){
+	var len = item.querySelectorAll('li').length + 1;
+	item.style.counterReset = 'cnt ' + len; 
+});
+</script>
+
+</html>
