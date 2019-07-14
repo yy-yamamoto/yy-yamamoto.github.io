@@ -17,55 +17,7 @@ gtag('config', 'UA-136961814-1');
 <meta name="description" content="Profile of Yota Yamamoto">
 <meta name="keywords" content="Yota Yamamoto, 山本　洋太, special-purpose computers, HORN, electro-holography, electroholography, digital holography, embedded systems">
 <link rel="stylesheet" href="css/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(function() {
-	var stepMenu = function() {
-    var array =
-	{
-      '#cv': 0,
-      '#research': 0,
-	  '#publication': 0,
-	  '#publication_japanese': 0,
-	  '#link': 0,
-    };
-
-    var $globalNavi = new Array();
-
-    for (var key in array) {
-      if ($(key).offset()) {
-        array[key] = $(key).offset().top - 10;
-        $globalNavi[key] = $('.step li a[href="' +key+ '"]');
-      }
-    }
-
-    $(window).scroll(function () {
-      for (var key in array) {
-        if ($(window).scrollTop() > array[key] - 10) {
-          $('.step li a').each(function() {
-            $(this).removeClass('current');
-          });
-          $globalNavi[key].addClass('current');
-        }
-      }
-    });
-  	}
-
-	$(window).on('load scroll', function() {
-		stepMenu();
-	});
-
-
-	var navLink = $('#menubar li a');
-	navLink.click(function() {
-		$('html,body').animate({
-			scrollTop: $($(this).attr('href')).offset().top
-		}, 100);
-		return false;
-	})
-});
-</script>
-
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -270,10 +222,41 @@ document.querySelector('#nav_toggle')
 
 //-------------------
 // publication lists
-var pub_lists = document.querySelectorAll('ol.pub_list');
+const pub_lists = document.querySelectorAll('ol.pub_list');
 pub_lists.forEach(function(item, i){
 	var len = item.querySelectorAll('li').length + 1;
 	item.style.counterReset = 'cnt ' + len; 
+});
+
+//-------------------
+// smooth scroll
+// var navLink = $('#menubar li a');
+// 	navLink.click(function() {
+// 		$('html,body').animate({
+// 			scrollTop: $($(this).attr('href')).offset().top
+// 		}, 100);
+// 		return false;
+// 	})
+
+
+//-------------------
+// show current site
+window.addEventListener('scroll', () => {
+	const mlinks = document.querySelectorAll('#menubar li a[href^="#"]');
+	const slinks = document.querySelectorAll('.step li a');
+	let nowY = window.pageYOffset;
+	mlinks.forEach(function(item, i){
+		const href = item.getAttribute('href');
+    	const target = document.querySelector(href);
+		const targetRect = target.getBoundingClientRect().top;
+    	const targetY = targetRect + nowY;
+		if (nowY > targetY - 10) {
+			document.querySelectorAll('#menubar li a')
+				.forEach(function(a, i){
+					a.classList.remove('current');});
+			item.classList.add('current');
+		};
+	});
 });
 </script>
 
