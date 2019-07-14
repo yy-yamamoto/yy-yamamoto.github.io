@@ -214,7 +214,47 @@ section#link
 	padding-right: 20px;
 	padding-bottom: 15px;
 	list-style-position: inside;
+
+	/* list-style-type:none; */
+	/* counter-increment: cnt; */
 }
+
+ol.pub_list{
+	/* counter-reset: cnt; */
+	list-style-type: none;
+}
+
+/* ol.pub_list li
+{ */
+	/* list-style-type:none;
+	list-style-position:inside; */
+	/* counter-increment: cnt; */
+	/* text-indent: -3em; */
+	/* padding-left: 3em; */
+/* } */
+
+ol.pub_list li::before{
+	counter-increment: cnt -1;
+	/* list-style-position: outside; */
+	display: marker;
+	content: "[" counter(cnt) "] ";
+	/* width: 5em; */
+	/* display: inline-block;忘れずに！ */
+  	/* width: 3em;画像の幅 */
+  /* height: 50px;画像の高さ */
+  /* background-image: url(../img/face.png); */
+  	/* background-size: contain; */
+  	/* vertical-align: middle; */
+} 
+
+
+#publication li,
+#publication_japanese li
+{
+	padding-bottom: 0.8em;
+	line-height: 1.6;
+}
+
 
 #contents h2 {
 	clear: both;
@@ -223,7 +263,7 @@ section#link
 	/* color: #fff; */
 	padding: 5px 10px;
 	margin-left: 10px;
-		margin-right: 10px;
+	margin-right: 10px;
 	/* background: #87ceeb; */
 	/* border-radius: 10px; */
 	font-weight: bold;

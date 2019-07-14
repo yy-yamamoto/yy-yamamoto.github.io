@@ -88,7 +88,17 @@ $(function(){
 		});
 </script>
 
-<!-- <script type="text/javascript" src="js/openclose.js"></script> -->
+<script>
+$(function(){
+	var pub_list = $('ol.pub_list');
+	$.each(pub_list, function(index, val){
+		var pub_list_each_len = $(val).find("li").length;
+		var ss = 'cnt ' + (pub_list_each_len + 1);
+		$(val).css('counter-reset', ss);
+	});
+});
+</script>
+
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -156,7 +166,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 <h2>Publication</h2>
 
 <h3>Paper (Refereed)</h3>
-<ol reversed>
+<ol reversed class="pub_list">
 	<h4>2019</h4>
 	<li>Tomoyoshi Shimobaba, David Blinder, Michal Makowski, Peter Schelkens, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Takashi Nishitsuji, Yutaka Endo, Takashi Kakue, Tomoyoshi Ito, "<a href="https://doi.org/10.1364/OL.44.003038">Dynamic range compression scheme for digital hologram using a deep neural network</a>," Optics Letters, 44, 3038-3041 (2019)</li>
 	
@@ -178,7 +188,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 
 
 <h3>International Conference</h3>
-<ol reversed>
+<ol reversed class="pub_list">
 	<h4>2019</h4>
 	<li>(invite) ○Tomoyoshi Shimobaba, David Blinder, Peter Schelkens, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Atsushi Shiraki, Takashi Kakue, Tomoyoshi Ito, "Deep-learning-based dynamic range compression for 3D scene hologram", International Conference on Optics & Electro-Optics XLIII Symposium of Optical Society of India (ICOL-2019), IRDE, Uttarakhand India (19-22 Oct. 2019)</li>
 
@@ -204,7 +214,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 <section id="publication_japanese">
 <h2>Publication (in Japanese)</h2>
 <h3>国内発表 Domestic Conference</h3>
-<ol reversed>
+<ol reversed class="pub_list">
 	<h4>2019</h4>
 	<li>（招待講演）<span class="me">○山本洋太</span>, "ホログラフィ専用計算機の開発による次世代映像システム", 第20回情報フォトニクス研究グループ研究会（秋合宿）, 徳島県 (2019.9.23-25)</li>
 	
@@ -247,7 +257,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 
 
 <h3>受賞 Award</h3>
-<ol reversed>
+<ol reversed class="pub_list">
 	<li><span class="me">○山本洋太</span>, 増田信之, 角江崇, 下馬場朋禄, 伊藤智義, "漸化式を⽤いた組み込み機器向け電⼦ホログラフィ専⽤計算機の開発", <a href="https://www.ipsj.or.jp/award/taikaisyorei.html#anc1">情報処理学会第81回全国大会 大会奨励賞（旧学術奨励賞）</a> (2019.3.14-16)</li>
 
 	<li>廣田祐輔, 佐藤紘将, <span class="me">山本洋太</span>, 増田信之, "動的部分再構成技術を用いた専用計算機システムの開発", 第17回情報科学技術フォーラム FIT推奨賞 (2018.9.19-21)</li>
@@ -257,7 +267,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 
 
 <h3>解説記事 Interpretive article</h3>
-<ol reversed>
+<ol reversed class="pub_list">
 	<li>山田翔大, <span class="me">山本洋太</span>, 三瓶卓方, 伊藤智義, "DFD錯視を利用したスマートフォンによる小型立体映像装置の開発", 画像ラボ, 29(11), 33-39(2018)</li>
 </ol>
 </section>
