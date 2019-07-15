@@ -241,22 +241,25 @@ pub_lists.forEach(function(item, i){
 
 //-------------------
 // show current site
+const mlinks = document.querySelectorAll('#menubar li a[href^="#"]');
 window.addEventListener('scroll', () => {
-	const mlinks = document.querySelectorAll('#menubar li a[href^="#"]');
-	const slinks = document.querySelectorAll('.step li a');
 	let nowY = window.pageYOffset;
+	let x = new Array();
 	mlinks.forEach(function(item, i){
 		const href = item.getAttribute('href');
     	const target = document.querySelector(href);
 		const targetRect = target.getBoundingClientRect().top;
     	const targetY = targetRect + nowY;
 		if (nowY > targetY - 10) {
-			document.querySelectorAll('#menubar li a')
-				.forEach(function(a, i){
-					a.classList.remove('current');});
-			item.classList.add('current');
-		};
+			x.push(item);
+		}
 	});
+	if (x.length > 0) {
+		document.querySelectorAll('#menubar li a').forEach(function(a, i){
+			a.classList.remove('current');
+		});
+		x.pop().classList.add('current');
+	}
 });
 </script>
 
