@@ -409,3 +409,19 @@ footer a {
 footer .pr {
 	display: block;
 }
+
+#research video {
+	/* min-width: 50%; */
+	/* min-height: 100%; */
+	width: 90%;
+	/* auto; */
+	/* height: auto; */
+	
+	padding-left: 20px;
+	/* padding-right: 20px; */
+	/* text-align:center; */
+}
+
+#research .videobox {
+	text-align:center;
+}
