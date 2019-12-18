@@ -242,6 +242,12 @@ ol.pub_list{
 	list-style-type: none;
 }
 
+ol.pub_list li.pub_year{
+	/* counter-reset: cnt; */
+	/* list-style-type: none; */
+    margin-top: 0.3em;
+}
+
 /* ol.pub_list li
 { */
 	/* list-style-type:none;
@@ -251,7 +257,7 @@ ol.pub_list{
 	/* padding-left: 3em; */
 /* } */
 
-ol.pub_list li::before{
+ol.pub_list li:not(.pub_year)::before{
 	counter-increment: cnt -1;
 	/* list-style-position: outside; */
 	/* display: marker; */
@@ -365,6 +371,9 @@ ol.pub_list li::before{
 	}
 }
 
+#link ul {
+    list-style-type: circle;
+}
 
 
 
