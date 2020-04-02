@@ -1,12 +1,65 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 200;
+}
+
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+@media all and (-ms-high-contrast: none)  {
+  html {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
+@media all and (-ms-high-contrast: active) {
+  html {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
 	-webkit-text-size-adjust: none;
 	color: #666;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	/* font-size: 16px;	 */
+	/* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+	/* font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+	/* font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif; */
+    /* font-size: 16px;	 */
 	line-height: 2;
 	background: #fff;
 }
@@ -50,21 +103,20 @@ a:hover {
 #container {
 	max-width: 1200px;
 	margin: 0px auto;
-	/* margin: 50px auto; */
-	/* padding: 100px; */
 	padding-top: 5em;
 }
 
-/* Memu bar
-------------------------------------------*/
+/* 
+ * Memu bar
+ */
 .site-header{
 	position: fixed;
 	width: 100%;
 	background: #292929;
-  display: flex;
-  padding: 5px 0px;
-  position: fixed;
-  justify-content: space-between;
+    display: flex;
+    padding: 5px 0px;
+    position: fixed;
+    justify-content: space-between;
 	width: 100%;
 	z-index: 99;
 }
@@ -105,7 +157,7 @@ nav#menubar{
 	display: none;
 }
 
-@media screen and (max-width: 820px) { 
+@media screen and (max-width: 870px) { 
 	nav#menubar{
 		/* display: none; */
 		visibility: hidden;
@@ -143,20 +195,15 @@ nav#menubar{
 	}
 
 	header.site-header.open > nav#menubar{
-		/* 開いている状態 */
-		/* line-height: 1.5; */
-		/* display: block; */
 		opacity: 1;
 		visibility: visible;
-		/* 開くアニメーション */
 		transition:
     		opacity     .1s linear .1s,
     		visibility  .1s linear .1s;
 	}
 }
 
-@media screen and (max-width: 820px){	
-	/*開閉ボタン*/
+@media screen and (max-width: 870px){	
 	#nav_toggle{
 		display: block;
 		width: 40px;
@@ -190,7 +237,6 @@ nav#menubar{
 		top:24px;
 	}
 	
-	/*開閉ボタンopen時*/
 	.open #nav_toggle span:nth-child(1) {
 			top: 12px;
 		   -webkit-transform: rotate(135deg);
@@ -226,15 +272,13 @@ section#link
 #publication ol,
 #publication ul,
 #publication_japanese ol,
+#publication_japanese ul,
 #link ul
 {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 15px;
 	list-style-position: inside;
-
-	/* list-style-type:none; */
-	/* counter-increment: cnt; */
 }
 
 ol.pub_list{
@@ -243,32 +287,12 @@ ol.pub_list{
 }
 
 ol.pub_list li.pub_year{
-	/* counter-reset: cnt; */
-	/* list-style-type: none; */
     margin-top: 0.3em;
 }
 
-/* ol.pub_list li
-{ */
-	/* list-style-type:none;
-	list-style-position:inside; */
-	/* counter-increment: cnt; */
-	/* text-indent: -3em; */
-	/* padding-left: 3em; */
-/* } */
-
 ol.pub_list li:not(.pub_year)::before{
 	counter-increment: cnt -1;
-	/* list-style-position: outside; */
-	/* display: marker; */
 	content: "[" counter(cnt) "] ";
-	/* width: 5em; */
-	/* display: inline-block;忘れずに！ */
-  	/* width: 3em;画像の幅 */
-  /* height: 50px;画像の高さ */
-  /* background-image: url(../img/face.png); */
-  	/* background-size: contain; */
-  	/* vertical-align: middle; */
 } 
 
 
@@ -298,24 +322,16 @@ ol.pub_list li:not(.pub_year)::before{
 
 #contents h3 {
 	clear: both;
-	/* margin-bottom: 15px; */
-	padding: 3px 20px;	/*上下、左右への余白*/
-	background: #fff;	/*背景色*/
-	/*border: 1px solid #ccc;*/	/*枠線の幅、線種、色*/
-	/*border-radius: 10px;*/
+	padding: 3px 20px;
+	background: #fff;
 	font-weight: bold;
 }
 
 #contents h4 {
 	clear: both;
-	/* margin-bottom: 15px; */
 	font-weight: bold;
-	/* padding: 3px 20px;	上下、左右への余白 */
-	background: #fff;	/*背景色*/
-	/*border: 1px solid #ccc;*/	/*枠線の幅、線種、色*/
+	background: #fff;
 	padding: 0px 0px 0px 0px;
-	/* margin: 0px 0px 0px -20px; */
-	/*border-radius: 10px;*/
 }
 
 #contents p {
@@ -327,8 +343,9 @@ ol.pub_list li:not(.pub_year)::before{
 	margin-top: -5px;
 }
 
-/* C.V. 
--------------------------------------------*/
+/* 
+ * C.V. 
+ */
 #cv dl, #cv ul{
 	padding: 3px 20px;
 }
@@ -359,7 +376,7 @@ ol.pub_list li:not(.pub_year)::before{
 	/* width: 5em; */
 }
 
-@media screen and (max-width: 820px) { 
+@media screen and (max-width: 870px) { 
 	#cv dl > dd{
 		margin-left: 1em;
 	}
@@ -377,8 +394,9 @@ ol.pub_list li:not(.pub_year)::before{
 
 
 
-/* 論文用 装飾
-----------------------------------------------------------------------*/
+/* 
+ * for paper
+ */
 .me {
 	text-decoration: underline;
 	font-weight: bold;
@@ -404,34 +422,40 @@ ol.pub_list li:not(.pub_year)::before{
 	color: #666;
 }
 
+.invite::before {
+	display        : inline-block;
+	content        : "INVITE";
+	background     : #ff0000;
+	color          : #ffffff;
+	font-weight    : bold;   
+	font-size      : 10pt;           
+	letter-spacing : -1px;           
+	line-height    : 1;              
+	vertical-align : top;            
+	margin         : 0;              
+	padding        : 1px;            
+	transform      : scale(0.8) 
+					 translateX(10%);
+}
 
-/*フッター
-----------------------------------------------------------------------*/
+
+/*
+ * for footer
+ */
 footer {
 	clear: both;
 	text-align: center;
 	padding: 50px 0px 0px;
 }
+
+footer { /* #link fix */
+	margin-bottom: 50em;
+}
+
 footer a {
 	text-decoration: none;
 	border: none;
 }
 footer .pr {
 	display: block;
-}
-
-#research video {
-	/* min-width: 50%; */
-	/* min-height: 100%; */
-	width: 90%;
-	/* auto; */
-	/* height: auto; */
-	
-	padding-left: 20px;
-	/* padding-right: 20px; */
-	/* text-align:center; */
-}
-
-#research .videobox {
-	text-align:center;
 }
