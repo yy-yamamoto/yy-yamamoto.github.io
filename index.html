@@ -299,6 +299,7 @@ section#link
 #publication ol,
 #publication ul,
 #publication_japanese ol,
+#publication_japanese ul,
 #link ul
 {
 	padding-left: 20px;
@@ -448,6 +449,22 @@ ol.pub_list li:not(.pub_year)::before{
 	color: #666;
 }
 
+.invite::before {
+	display        : inline-block;
+	content        : "INVITE";
+	background     : #ff0000;
+	color          : #ffffff;
+	font-weight    : bold;   
+	font-size      : 10pt;           
+	letter-spacing : -1px;           
+	line-height    : 1;              
+	vertical-align : top;            
+	margin         : 0;              
+	padding        : 1px;            
+	transform      : scale(0.8) 
+					 translateX(10%);
+}
+
 
 /*
  * for footer
@@ -509,27 +526,30 @@ footer .pr {
 	<dt>Affiliation</dt><dd>千葉大学 融合理工学府 基幹工学専攻 博士後期課程3年 <br>Doctoral Program 3rd, Graduate School of Science and Engineering, Chiba University, Japan</dd>
 	<dt>Education</dt><dd>
 		<dl>
-			<dt>2012-2016</dt><dd>東京理科大学 基礎工学部 電子応用工学科 <br>Faculty of Industrial Science and Technology, Tokyo University of Science</dd>
-			<dt>2016-2018</dt><dd>東京理科大学大学院 基礎工学研究科 電子応用工学専攻 <br>Graduate School of Industrial Science and Technology, Tokyo University of Science</dd>
-			<dt>2018-</dt><dd>千葉大学 融合理工学府 基幹工学専攻 <br>Graduate School of Science and Engineering, Chiba University</dd>
+            <dt>2018-</dt><dd>千葉大学 融合理工学府 基幹工学専攻 <br>Graduate School of Science and Engineering, Chiba University</dd>
+			<dt>2016-2018</dt><dd>東京理科大学大学院 基礎工学研究科 電子応用工学専攻 <br>M.E., Graduate School of Industrial Science and Technology, Tokyo University of Science</dd>            
+            <dt>2012-2016</dt><dd>東京理科大学 基礎工学部 電子応用工学科 <br>B.E., Faculty of Industrial Science and Technology, Tokyo University of Science</dd>
 		</dl>
 	</dd>
-	<dt>Career</dt><dd>
+    <dt>Career</dt>
+    <dd>
 		<dl>
-			<dt>2016</dt>
-                <dd>東京理科大学 宇宙教育プログラム</dd>
-			<dt>2016-2018</dt>
-                <dd>東京理科大学 基礎工学部電子応用工学科 電子応用工学実験 ティーチングアシスタント</dd>
-			<dt>2018-2019</dt>
-				<dd>千葉大学 グローバルプロミネント研究基幹 リサーチアシスタント</dd>
-			<dt>2018-</dt>
+            <dt>2020-</dt>
+                <dd>日本学術振興会特別研究員 DC2<br>Research Fellowship for Young Scientists, Japan Society for the Promotion of Science (JSPS)</dd>
+	    	<dt>2018-</dt>
+				<dd>千葉大学 AI技術講座 講師<br>Lecturer (part-time) , Institute for Global Prominent Research, Chiba University</dd>
+            <dt>2018-</dt>
 				<dd>(国際共同研究) HANEDA - Holographic Near Eye Display
 					First Stage Researcher</dd>
-			<dt>2018</dt>
-				<dd>千葉大学 AI技術講座 (教職員向け) 講師及び講師補助</dd>
-			<dt>2019</dt>
-				<dd>千葉大学 AI技術講座 (教職員・博士後期学生向け) 講師</dd>
-		</dl>
+            <dt>2018</dt>
+                <dd>千葉大学 AI技術講座 (教職員向け) 講師補助<br>Tutor, Institute for Global Prominent Research, Chiba University</dd>
+            <dt>2018-2019</dt>
+				<dd>千葉大学 グローバルプロミネント研究基幹 リサーチアシスタント<br>Research Assistant, Institute for Global Prominent Research, Chiba University</dd>
+            <dt>2016-2018</dt>
+                <dd>東京理科大学 基礎工学部電子応用工学科 電子応用工学実験 ティーチングアシスタント<br>Teaching Assistant, Faculty of Industrial Science and Technology, Tokyo University of Science</dd>
+            <dt>2016</dt>
+                <dd>東京理科大学 宇宙教育プログラム <br>Team TUS for Space</dd>
+        </dl>
 	</dd>
 </dl>
 </section>
@@ -558,7 +578,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
     <li class="pub_year"><h4>2020</h4></li>
     <li>Tomoyoshi Shimobaba, Michal Makowski, Takayuki Takahashi, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Takashi Kakue, Tomoyoshi Ito, "<a href="https://doi.org/10.3390/app10031132">Reducing computational complexity and memory usage of iterative hologram optimization using scaled diffraction</a>," Applied Sciences, 10(3), 1132-1143 (2020)</li>
 
-    <li>Tomoyoshi Shimobaba, Takayuki Takahashi, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Atsushi Shiraki, Takashi Kakue, Tomoyoshi Ito, "Simple complex amplitude encoding of a phase-only hologram using binarized amplitude", Journal of Optics (accepted)</li>
+    <li>Tomoyoshi Shimobaba, Takayuki Takahashi, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Atsushi Shiraki, Takashi Kakue, Tomoyoshi Ito, "<a href="https://doi.org/10.1088/2040-8986/ab7b02 ">Simple complex amplitude encoding of a phase-only hologram using binarized amplitude</a>," Journal of Optics, 22(4) , 045703 (2020)</li>
     
     <li>Yoshiya Wagatsuma, Tomoyoshi Shimobaba, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Takashi Kakue, Tomoyoshi Ito, "<a href="https://doi.org/10.1364/AO.375503">Phase retrieval using axial diffracted patterns and ptychographic iterative engine</a>," Applied Optics, 59, 354-362 (2020) </li>
 
@@ -587,20 +607,24 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 <h3>International Conference</h3>
 <ol reversed class="pub_list">
     <li class="pub_year"><h4>2020</h4></li>
+    <li>○Tomoyoshi Shimobaba, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Takashi Kakue, Tomoyoshi Ito, "Dedicated processor for holography assisted by deep neural networks",  OSA Frontiers in Optics 2020 + Laser Science (FiO/LS), the Marriott Wardman Park in Washington, DC, USA (13-17 Sep. 2020)<span class="invite"></span></li>
+
+    <li>○Tomoyoshi Shimobaba, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Takashi Kakue, Tomoyoshi Ito, "Holographic classification and regression using binary neural network", IEEE 18th International Conference on Industrial Informatics (INDIN2020)<span class="invite"></span></li>
+    
     <li>○Yumi Yamaguchi, Yuki Nagahama, <span class="me">Yota Yamamoto</span>, Tomoyoshi Shimobaba, Takashi Kakue, Tomoyoshi Ito, "Improvement of Image Quality of Phase-Only Hologram using Random Phase-Free Method: Verification by Simulation and Optical Experiments," SPIE Photonics Europe, France (29 Mar. - 2 Apr. 2020)</li>
     
 	<li class="pub_year"><h4>2019</h4></li>
 	<li><span class="me">○Yota Yamamoto</span>, Nobuyuki Masuda, Hirotaka Nakayama, Tomoyoshi Shimobaba, Takashi Kakue, Tomoyoshi Ito, "Highly parallel special-purpose computer for electroholography on system on a chip," International Conference in 3D systems and Applications (3DSA2019), 3Dp1/3DSAp1, Sapporo (27-29 Nov. 2019)</li>
 
-	<li>(invite) ○Tomoyoshi Shimobaba, David Blinder, Peter Schelkens, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Atsushi Shiraki, Takashi Kakue, Tomoyoshi Ito, "Deep-learning-based dynamic range compression for 3D scene hologram", International Conference on Optics & Electro-Optics XLIII Symposium of Optical Society of India (ICOL-2019), IRDE, Uttarakhand India (19-22 Oct. 2019)</li>
+	<li>○Tomoyoshi Shimobaba, David Blinder, Peter Schelkens, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Atsushi Shiraki, Takashi Kakue, Tomoyoshi Ito, "Deep-learning-based dynamic range compression for 3D scene hologram", International Conference on Optics & Electro-Optics XLIII Symposium of Optical Society of India (ICOL-2019), IRDE, Uttarakhand India (19-22 Oct. 2019)<span class="invite"></span></li>
 
-	<li>(invite) ○Takashi Kakue, Hidenari Yanagihara, <span class="me">Yota Yamamoto</span>, Tomoyoshi Shimobaba, Tomoyoshi Ito,"Demonstration of real-time holographic display system for three-dimensional reconstruction of real scenes", HICO, Gyeongju, Korea (27-30 Aug.  2019)</li>
+	<li>○Takashi Kakue, Hidenari Yanagihara, <span class="me">Yota Yamamoto</span>, Tomoyoshi Shimobaba, Tomoyoshi Ito,"Demonstration of real-time holographic display system for three-dimensional reconstruction of real scenes", HICO, Gyeongju, Korea (27-30 Aug.  2019)<span class="invite"></span></li>
 
 	<li><span class="me">○Yota Yamamoto</span>, Nobuyuki Masuda, Hirotaka Nakayama, Tomoyoshi Shimobaba, Takashi Kakue, Tomoyoshi Ito, "Phase type special-purpose computer for electroholography in embedded systems," 8th International Congress on Advanced Applied Informatics, EAIS-WSS 7-2, Toyama International Conference Center Japan (7-12 July 2019)</li>
 
 	<li>○Tomoyoshi Shimobaba, David Blinder, Peter Schelkens, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Takashi Kakue and Tomoyoshi Ito, "Deep-learning-assisted hologram calculation via low-sampling holograms," 8th International Congress on Advanced Applied Informatics, EAIS-WSS 7-3, Toyama International Conference Center Japan (7-12 July 2019)</li>
 
-	<li>(invite) ○Takashi Nishitsuji, <span class="me">Yota Yamamoto</span>, Takashige Sugie, Takashi Kakue, Hirotaka Nakayama, Tomoyoshi Shimobaba, and Tomoyoshi Ito, "Dedicated computer for computer holography and its future outlook," SPIE Sensing Technology + Applications, 10997-16, Baltimore USA (14-18 Apr. 2019) </li>
+	<li>○Takashi Nishitsuji, <span class="me">Yota Yamamoto</span>, Takashige Sugie, Takashi Kakue, Hirotaka Nakayama, Tomoyoshi Shimobaba, and Tomoyoshi Ito, "Dedicated computer for computer holography and its future outlook," SPIE Sensing Technology + Applications, 10997-16, Baltimore USA (14-18 Apr. 2019) <span class="invite"></span></li>
 
 	<li class="pub_year"><h4>2018</h4></li>
 	<li>○Takashi Nishitsuji, <span class="me">Yota Yamamoto</span>, Takashige Sugie, Hirotaka Nakayama, Takashi Kakue, Tomoyoshi Shimobaba, Tomoyoshi Ito, "Recent progress of dedicated computer for electro-holography," The 8th international Symposium on Holography (HODIC in Taiwan 5), 0925-0950, National Chiao Tung University (13-15 Dec. 2018)</li>
@@ -616,14 +640,19 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 <section id="publication_japanese">
 <h2>Publication (in Japanese)</h2>
 <h3>査読付き論文 Paper (Refereed, written in Japanese)</h3>
+<ul>
+    <li><span class="me">山本洋太</span>, 増田信之, 下馬場朋禄, 角江崇, 伊藤智義, "System on a Chipを用いた小型な電子ホログラフィ専用計算機の開発" (投稿準備中)</li>
+</ul>
 <ol reversed class="pub_list">
     <li class="pub_year"><h4>2020</h4></li>
-    <li>山口由美, 長浜佑樹, <span class="me">山本洋太</span>, 下馬場朋禄, 角江崇, 伊藤智義, "ランダム位相フリー法を用いた位相型ホログラムの画質改善とシミュレーション及び光学実験による検証", 映像情報メディア学会誌 (accepted)</li>
+    <li>山口由美, 長浜佑樹, <span class="me">山本洋太</span>, 下馬場朋禄, 角江崇, 伊藤智義, "<a href="https://doi.org/10.3169/itej.74.390">ランダム位相フリー法を用いた位相型ホログラムの画質改善とシミュレーション及び光学実験による検証</a>", 映像情報メディア学会誌, 74(2), 390-394 (2020)</li>
 </ol>	
 
 <h3>国内発表 Domestic Conference</h3>
 <ol reversed class="pub_list">
     <li class="pub_year"><h4>2020</h4></li>
+    <li><span class="me">○山本洋太</span>, 増田信之, 下馬場朋禄, 角江崇, 伊藤智義, "Xilinx Alveo U250を用いた電子ホログラフィ専用計算機の実装", リコンフィギャラブルシステム研究会, 滋賀県 (エポック立命２１) (2020.5.27-29)</li>
+
     <li>〇渡邊峻介, 西辻崇, <span class="me">山本洋太</span>, 星郁雄, 干川尚人, 伊藤智義, "FPGAを用いた避難行動予測回路の設計", A-19-4,  電子情報通信学会 総合大会, 広島大学 (2020.3.17-20)</li>
     
     <li><span class="me">○山本洋太</span>, 増田信之, 下馬場朋禄, 角江崇, 伊藤智義, "Xilinx Alveo U250を用いた電子ホログラフィ専用計算機の開発", CPSY-18, 組込み技術とネットワークに関するワークショップ ETNET2020, 鹿児島 (2020.2.27-28)</li>
@@ -635,7 +664,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
     
     <li>○渡邊峻介, 西辻崇, <span class="me">山本洋太</span>, 星郁雄, 干川尚人, 伊藤智義, "FPGAを用いた避難行動予測・誘導デバイスの開発", 110, 超知性ネットワーキングに関する分野横断型研究会 (RISING), 東京大学 (2019.11.26-27)</li>
     
-	<li>（招待講演）<span class="me">○山本洋太</span>, 増田信之, 下馬場朋禄, 角江崇, 伊藤智義, "ホログラフィ専用計算機の開発による次世代映像システム", 第20回情報フォトニクス研究グループ研究会（秋合宿）, 徳島県 (2019.9.23-25)</li>
+	<li><span class="me">○山本洋太</span>, 増田信之, 下馬場朋禄, 角江崇, 伊藤智義, "ホログラフィ専用計算機の開発による次世代映像システム", 第20回情報フォトニクス研究グループ研究会（秋合宿）, 徳島県 (2019.9.23-25)<span class="invite"></span></li>
 	
 	<li>○山口由美, 長浜佑樹, <span class="me">山本洋太</span>, 下馬場朋禄, 角江崇, 伊藤智義, "ランダム位相フリー法を用いた位相型ホログラムの画質改善とシミュレーションによる検証", 日本光学会ホログラフィック・ディスプレイ研究会（OSJ-HODIC）, 首都大学東京 秋葉原サテライトキャンパス  (2019.9.13)</li>
 	
@@ -702,7 +731,9 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 
 <h3>解説記事 Interpretive article</h3>
 <ol reversed class="pub_list">
+	<li>下馬場朋禄, 星郁雄, <span class="me">山本洋太</span>, 塩見日隆, 角江崇, 伊藤智義, "小型化を志向したホログラフィックプロジェクション", 光アライアンス (2020)</li>
 	<li>山田翔大, <span class="me">山本洋太</span>, 三瓶卓方, 伊藤智義, "DFD錯視を利用したスマートフォンによる小型立体映像装置の開発", 画像ラボ, 29 (11), 33-39 (2018)</li>
+</ol>
 </ol>
 </section>
 
