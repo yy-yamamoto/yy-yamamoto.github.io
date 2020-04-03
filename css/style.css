@@ -459,3 +459,95 @@ footer a {
 footer .pr {
 	display: block;
 }
+
+/*
+** Multi Lang
+**/
+#contents .jp {
+	display: inline;
+	/* visibility: visible; */
+	/* opacity: 1; */
+	/* display: no; */
+}
+
+#contents .jp_block {
+	display: block;
+}
+
+#contents .togglevisibility.jp
+, #contents .togglevisibility.jp_block
+{
+	display: none;
+	/* visibility: collapse; */
+	/* opacity: 1; */
+	/* display: no; */
+}
+
+#contents .en
+, #contents .en_block
+{
+	display: none;
+	/* visibility: collapse; */
+	/* opacity: 0; */
+	/* display: no; */
+}
+
+#contents .togglevisibility.en{
+	display: inline;
+	/* visibility: visible; */
+	/* opacity: 0; */
+	/* display: no; */
+}
+
+#contents .togglevisibility.en_block{
+	display: block;
+}
+
+.trans{
+	/* font-weight: bold; */
+	/* color: #fff; */
+	/* background: #ebe6d6; */
+	/* display: block; */
+	font-size: 100%;
+	margin: auto 1em auto 0em;
+	margin-left: 0em;
+	/* width: 100%; */
+    /* text-align: right; */
+    float:right;
+}
+
+.trans .en_button {
+	color: #bfbfbf;
+	cursor : pointer;
+}
+
+.trans .jp_button {
+	cursor : pointer;
+	color: #666;
+}
+
+.trans .en_button.togglevisibility {
+	color: #666;
+}
+
+.trans .jp_button.togglevisibility {
+	color: #bfbfbf;
+}
+
+/* .trans .en {
+	color: #666;
+	cursor : pointer;
+}
+
+.trans .jp {
+	cursor : pointer;
+	color: #ffffff;
+}
+
+.trans .en.togglevisibility {
+	color: #ffffff;
+}
+
+.trans .jp.togglevisibility {
+	color: #666;
+} */
