@@ -1,64 +1,43 @@
 @charset "utf-8";
 
+/* font setting 
+ * Referenced: https://qiita.com/tsuka-rinorino/items/b30e03ce10aa38ac2a10
+ */
 @font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 200;
-}
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Bold");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: local("Helvetica Neue Regular");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: local("Helvetica Neue Regular");
-  font-weight: 200;
-}
-
-
-html {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-}
-@media all and (-ms-high-contrast: none)  {
-  html {
-    font-family: Verdana, Meiryo, sans-serif;
+    font-family: "Original Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 100;
   }
-}
-@media all and (-ms-high-contrast: active) {
-  html {
-    font-family: Verdana, Meiryo, sans-serif;
+  @font-face {
+    font-family: "Original Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 200;
   }
-}
+  @font-face {
+    font-family: "Original Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Original Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Original Yu Gothic";
+    src: local("Yu Gothic Bold");
+    font-weight: bold;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", "Original Yu Gothic", "Yu Gothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans Emoji";
+  }
 
 body {
 	margin: 0px;
 	padding: 0px;
 	-webkit-text-size-adjust: none;
 	color: #666;
-	/* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
-	/* font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
-	/* font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif; */
     /* font-size: 16px;	 */
 	line-height: 2;
 	background: #fff;
@@ -301,6 +280,15 @@ ol.pub_list li:not(.pub_year)::before{
 {
 	padding-bottom: 0.5em;
 	line-height: 1.6;
+}
+
+/* justified */
+#publication li,
+#publication_japanese li,
+#research p
+{
+    text-align: justify;
+    text-justify: inter-ideograph;
 }
 
 
