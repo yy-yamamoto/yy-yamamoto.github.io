@@ -285,7 +285,8 @@ ol.pub_list li:not(.pub_year)::before{
 /* justified */
 #publication li,
 #publication_japanese li,
-#research p
+#research p,
+#sitepolicy p
 {
     text-align: justify;
     text-justify: inter-ideograph;

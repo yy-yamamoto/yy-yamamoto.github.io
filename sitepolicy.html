@@ -54,12 +54,10 @@ gtag('config', 'UA-136961814-1');
 
 
 <section id="sitepolicy">
-	<h2>Site Policy</h2>
-	<p>当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
-		このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。
-		このトラフィックデータは匿名で収集されており、個人を特定するものではありません。
-		この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。
-		この規約に関して、詳しくは<a href="http://www.google.com/analytics/terms/jp.html">こちら</a>、または<a href="https://www.google.com/intl/ja/policies/privacy/partners/">こちら</a>をクリックしてください。</p>
+	<h2 class="multilang">Site Policy</h2>
+	<p class="jp_block">当サイトでは，Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています．このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています．このトラフィックデータは匿名で収集されており，個人を特定するものではありません．	この機能はCookieを無効にすることで収集を拒否することが出来ますので，お使いのブラウザの設定をご確認ください．この規約に関して，詳しくは<a href="http://www.google.com/analytics/terms/jp.html">こちら</a>，または<a href="https://www.google.com/intl/ja/policies/privacy/partners/">こちら</a>をクリックしてください．</p>
+    
+    <p class="en_block">This site uses Google Analytics, an access analysis tool by Google. This Google Analytics uses cookies to collect traffic data. This traffic data is collected anonymously and does not identify your personally. Please check your browser settings to disable cookies to block this feature. Please click <a href="http://www.google.com/analytics/terms/us.html">here</a> or <a href="https://policies.google.com/technologies/partner-sites?hl=en">here</a> for more information about this agreement.</p>
 </section>
 
 
@@ -75,20 +73,35 @@ gtag('config', 'UA-136961814-1');
 </body>
 
 <script>
-//-------------------
-// menebar
+
+/*
+* menebar
+*/
 document.querySelector('#nav_toggle')
 	.addEventListener('click', function() {
     	document.querySelector('header').classList.toggle('open');
 });
 
-//-------------------
-// publication lists
-// var pub_lists = document.querySelectorAll('ol.pub_list');
-// pub_lists.forEach(function(item, i){
-// 	var len = item.querySelectorAll('li').length + 1;
-// 	item.style.counterReset = 'cnt ' + len; 
-// });
+/*
+ * Multi Lang
+ */
+ document.querySelectorAll('.multilang')
+	.forEach(function(item, i){
+		item.insertAdjacentHTML('beforeend', '<span class="trans"><span class="jp_button">Japanese</span> / <span class="en_button">English</span></span>');
+	});   
+document.querySelectorAll('.trans')
+	.forEach(function(item, i){
+		item.addEventListener('click', function() {
+			document.querySelectorAll('.en, .en_block, .en_button')
+				.forEach(function(x, i){
+					x.classList.toggle('togglevisibility');
+				});
+			document.querySelectorAll('.jp, .jp_block, .jp_button')
+				.forEach(function(x, i){
+					x.classList.toggle('togglevisibility');
+				});
+		});
+	});
 </script>
 
 </html>
