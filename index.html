@@ -172,9 +172,9 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 <h3>International Conference</h3>
 <ol reversed class="pub_list">
     <li class="pub_year"><h4>2020</h4></li>
-    <li>○Tomoyoshi Shimobaba, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Takashi Kakue, Tomoyoshi Ito, "Dedicated processor for holography assisted by deep neural networks",  OSA Frontiers in Optics 2020 + Laser Science (FiO/LS), the Marriott Wardman Park in Washington, DC, USA (13-17 Sep. 2020)<span class="invite"></span></li>
+    <li>○Tomoyoshi Shimobaba, <span class="me">Yota Yamamoto</span>, Takashi Nishitsuji, Ikuo Hoshi, Harutaka Shiomi, Takashi Kakue, Tomoyoshi Ito, "Dedicated processor for holography assisted by deep neural networks",  OSA Frontiers in Optics 2020 + Laser Science (FiO/LS), the Marriott Wardman Park in Washington, DC, USA (13-17 Sep. 2020)<span class="invite"></span></li>
 
-    <li>○Tomoyoshi Shimobaba, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Takashi Kakue, Tomoyoshi Ito, "Holographic classification and regression using binary neural network", IEEE 18th International Conference on Industrial Informatics (INDIN2020)<span class="invite"></span></li>
+    <li>○Tomoyoshi Shimobaba, <span class="me">Yota Yamamoto</span>, Ikuo Hoshi, Takashi Kakue, Tomoyoshi Ito, "Holographic classification and regression using binary neural network", IEEE 18th International Conference on Industrial Informatics (2020)<span class="invite"></span></li>
     
     <li>○Yumi Yamaguchi, Yuki Nagahama, <span class="me">Yota Yamamoto</span>, Tomoyoshi Shimobaba, Takashi Kakue, Tomoyoshi Ito, "Improvement of Image Quality of Phase-Only Hologram using Random Phase-Free Method: Verification by Simulation and Optical Experiments," SPIE Photonics Europe, France (29 Mar. - 2 Apr. 2020)</li>
     
@@ -198,7 +198,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 
 	<li><span class="me">○Yota Yamamoto</span>, Nobuyuki Masuda, Takashi Kakue, Tomoyoshi Shimobaba, Tomoyoshi Ito, "Development of special purpose computer for holography on embedded system," International Conference in 3D systems and Applications (3DSA2018), 3D6-3, Taiwan (29-30 Aug. 2018)</li>
 </ol>	
-</section>
+</section> <!-- publication -->
 
 
 
@@ -302,7 +302,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 	<li>山田翔大, <span class="me">山本洋太</span>, 三瓶卓方, 伊藤智義, "DFD錯視を利用したスマートフォンによる小型立体映像装置の開発", 画像ラボ, 29 (11), 33-39 (2018)</li>
 </ol>
 </ol>
-</section>
+</section>  <!-- publication_japanese -->
 
 
 <section id="link">
@@ -326,14 +326,16 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 
 <script>
 /*
- * menebar */
+ * menebar
+ */
 document.querySelector('#nav_toggle')
 	.addEventListener('click', function() {
     	document.querySelector('header').classList.toggle('open');
 });
 
 /*
- * publication lists */
+ * publication lists
+ */
 const pub_lists = document.querySelectorAll('ol.pub_list');
 pub_lists.forEach(function(item, i){
 	var len = item.querySelectorAll('li:not(.pub_year)').length + 1;
@@ -341,7 +343,8 @@ pub_lists.forEach(function(item, i){
 });
 
 /*
- * show current site */
+ * show current site
+ */
 const mlinks = document.querySelectorAll('#menubar li a[href^="#"]');
 window.addEventListener('scroll', () => {
 	let nowY = window.pageYOffset;
@@ -364,8 +367,8 @@ window.addEventListener('scroll', () => {
 });
 
 /*
-** Multi Lang
-**/
+ * Multi Lang
+ */
 document.querySelectorAll('.multilang')
 	.forEach(function(item, i){
 		item.insertAdjacentHTML('beforeend', '<span class="trans"><span class="jp_button">Japanese</span> / <span class="en_button">English</span></span>');
