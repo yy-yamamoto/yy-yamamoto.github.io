@@ -37,7 +37,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	-webkit-text-size-adjust: none;
-	color: #666;
+	color: #555;
     /* font-size: 16px;	 */
 	line-height: 2;
 	background: #fff;
@@ -304,7 +304,8 @@ ol.pub_list li:not(.pub_year)::before{
 	/* background: #87ceeb; */
 	/* border-radius: 10px; */
 	font-weight: bold;
-	border-bottom: 2px solid #ccc;
+    border-bottom: 1.5px solid #ccc;
+    font-size: 125%;
 }
 
 
@@ -313,7 +314,8 @@ ol.pub_list li:not(.pub_year)::before{
 	clear: both;
 	padding: 3px 20px;
 	background: #fff;
-	font-weight: bold;
+    font-weight: bold;
+    font-size: 100%;
 }
 
 #contents h4 {
@@ -422,8 +424,8 @@ ol.pub_list li:not(.pub_year)::before{
 	line-height    : 1;              
 	vertical-align : top;            
 	margin         : 0;              
-	padding        : 1px;            
-	transform      : scale(0.8) 
+	padding        : 2px;            
+	transform      : scale(0.7) 
 					 translateX(10%);
 }
 
@@ -492,17 +494,25 @@ footer .pr {
 	display: block;
 }
 
+.multilang {
+    position: relative;
+}
+
 .trans{
 	/* font-weight: bold; */
 	/* color: #fff; */
 	/* background: #ebe6d6; */
 	/* display: block; */
-	font-size: 100%;
+	/* font-size: 100%; */
 	margin: auto 1em auto 0em;
 	margin-left: 0em;
 	/* width: 100%; */
     /* text-align: right; */
     float:right;
+    font-size: medium;
+    position: absolute;
+    right: 0;
+    bottom: 0.2em;
 }
 
 .trans .en_button {
