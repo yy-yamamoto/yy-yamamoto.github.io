@@ -494,25 +494,28 @@ footer .pr {
 	display: block;
 }
 
-.multilang {
-    position: relative;
+.multilang > div{
+    display: inline-block;
+    width: 50%;
 }
 
 .trans{
 	/* font-weight: bold; */
 	/* color: #fff; */
 	/* background: #ebe6d6; */
-	/* display: block; */
+	display: inline-block;
 	/* font-size: 100%; */
-	margin: auto 1em auto 0em;
-	margin-left: 0em;
-	/* width: 100%; */
-    /* text-align: right; */
-    float:right;
+	/* margin: auto 1em auto 0em; */
+	/* margin-right: 1em; */
+	/* margin-left: 0em; */
+	width: 50%;
+    text-align: right;
+    /* float:right; */
     font-size: medium;
-    position: absolute;
-    right: 0;
-    bottom: 0.2em;
+    /* position: absolute; */
+    /* right: 0; */
+    /* bottom: 0.2em; */
+    vertical-align: middle;
 }
 
 .trans .en_button {
