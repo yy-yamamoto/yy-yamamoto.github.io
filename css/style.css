@@ -269,7 +269,11 @@ ol.pub_list li.pub_year{
     margin-top: 0.3em;
 }
 
-ol.pub_list li:not(.pub_year)::before{
+ol.pub_list:not(.jsena_pub_list) li:not(.pub_year){
+    list-style-type: circle;
+} 
+
+ol.jsena_pub_list li:not(.pub_year)::before{
 	counter-increment: cnt -1;
 	content: "[" counter(cnt) "] ";
 } 

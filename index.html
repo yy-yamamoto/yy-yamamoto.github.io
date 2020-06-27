@@ -339,7 +339,8 @@ document.querySelector('#nav_toggle')
 const pub_lists = document.querySelectorAll('ol.pub_list');
 pub_lists.forEach(function(item, i){
 	var len = item.querySelectorAll('li:not(.pub_year)').length + 1;
-	item.style.counterReset = 'cnt ' + len; 
+    item.style.counterReset = 'cnt ' + len;
+    item.classList.toggle('jsena_pub_list');
 });
 
 /*
