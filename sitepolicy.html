@@ -87,6 +87,10 @@ document.querySelector('#nav_toggle')
  */
  document.querySelectorAll('.multilang')
 	.forEach(function(item, i){
+        item.innerHTML = "<div>" + item.innerHTML + "</div>";
+	});   
+document.querySelectorAll('.multilang')
+	.forEach(function(item, i){
 		item.insertAdjacentHTML('beforeend', '<span class="trans"><span class="jp_button">Japanese</span> / <span class="en_button">English</span></span>');
 	});   
 document.querySelectorAll('.trans')
