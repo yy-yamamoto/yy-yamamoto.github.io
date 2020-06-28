@@ -106,8 +106,8 @@ gtag('config', 'UA-136961814-1');
 
 <div class="jp_block">
 <h3>研究テーマ</h3>
-<p>電子ホログラフィ向け専用計算機の開発を行っています．電子ホログラフィは光の干渉・回折を利用した技術です．人間が奥行きを知覚するために必要な奥行き手がかりをすべて再現可能であり，観察者に負担をかけない理想的な3次元技術として注目を集めています．電子ホログラフィでは，計算によって生成されるComputer-Generated Hologram (CGH) を利用しますが，その計算量は膨大であり，現状の計算機性能では実現が困難です．</br>
-電子ホログラフィ実現のため，アルゴリズム，計算回路レベルでの高速化の研究を行っています．特にField-Programmable Gate Array (FPGA) を用いて特定の計算に特化した計算システムを開発することにより，計算性能の飛躍的向上を目指しています．FPGAでは，CGH計算に特化した計算回路を複数構築し，計算効率と計算並列度を向上することにより，CPUやGraphics Processing Unit (GPU) と比べ高速な計算が可能となります．</p>
+<p>電子ホログラフィ向け専用計算機の開発を行っています．電子ホログラフィ (electroholography) は光の干渉・回折を利用した技術です．人間が奥行きを知覚するために必要な奥行き手がかりをすべて再現可能であり，観察者に負担をかけない理想的な3次元技術として注目を集めています．電子ホログラフィでは，計算によって生成されるComputer-Generated Hologram (CGH) を利用しますが，その計算量は膨大であり，現状の計算機性能では実現が困難です．</p>
+<p>電子ホログラフィ実現のため，アルゴリズム，計算回路レベルでの高速化の研究を行っています．特にField-Programmable Gate Array (FPGA) を用いて特定の計算に特化した計算システムを開発することにより，計算性能の飛躍的向上を目指しています．FPGAでは，CGH計算に特化した計算回路を複数構築し，計算効率と計算並列度を向上することにより，CPUやGraphics Processing Unit (GPU) と比べ高速な計算が可能となります．</p>
 
 <h3>研究キーワード</h3>
 <p>専用計算機, FPGA, 電子ホログラフィ, デジタルホログラフィ, 組み込みシステム</p>
@@ -115,8 +115,10 @@ gtag('config', 'UA-136961814-1');
 
 <div class="en_block">
 <h3>Current research theme</h3>
-<p>Special-purpose computer for electroholography on embedded system.
-I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC" that is large-scale system LSI with ARM CPU and FPGA (Field Programmable Gate Array).</p>
+<p>I am developing special-purpose computers for electroholography. Electroholography is a technique that uses the interference and diffraction of light. It can produce natural three-dimensional (3D) scenes and has gained recognition as an ideal 3D technology. In electroholography, the computationally generated Computer-Generated Hologram (CGH) is used, but the amount of computation is enormous. The current computer performance is not sufficient for achieving real-time electroholography.</p>
+<p>I am studying the speed-up of algorithms and circuits for electroholography. 
+In particular, I am developing specialized computation systems using field-programmable gate arrays (FPGAs).
+In FPGAs, multiple circuits specialized for CGH computation are constructed to improve computational efficiency and parallelism, enabling faster calculation than CPUs and Graphics Processing Units (GPUs).</p>
 
 <h3>Research interests</h3>
 <p>Special-purpose computers, FPGA, Electroholography, Digital holography, Embedded systems</p>
@@ -136,7 +138,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
                 <p>CGHを高速に計算する専用計算機の開発を行っています．開発したシステムは，約40万点からなる点群モデルから，時空分割法を用いて200万画素（1920×1080）のホログラムを毎秒60フレームで更新することができます．開発した専用計算機を用いて高精細なビデオホログラフィーのデモンストレーションに成功しました．</p>
                 <h5>Related articles</h5>
                 <ul>
-                    <li><a href="https://doi.org/10.1364/OE.26.034259">Large-Scale Electroholography by HORN-8 from Point-Cloud Model with 400,000 Points</a></li>
+                    <li><a href="https://doi.org/10.1364/OE.26.034259">Large-scale electroholography by HORN-8 from point-cloud model with 400,000 points</a></li>
                 </ul>
             </div>
             <div class="en_block">
@@ -144,25 +146,38 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
                 <p>I am developing special-purpose computers that generate computer-generated holograms at high speed. From a point-cloud model comprising ~400,000 points, the developed system can update a 2-million-pixel (1,920 × 1,080) hologram at 60 frames per second using the spatiotemporally divided method and succeeded in reproducing the video-holography.</p>
                 <h5>Related articles</h5>
                 <ul>
-                    <li><a href="https://doi.org/10.1364/OE.26.034259">Large-Scale Electroholography by HORN-8 from Point-Cloud Model with 400,000 Points</a></li>
+                    <li><a href="https://doi.org/10.1364/OE.26.034259">Large-scale electroholography by HORN-8 from point-cloud model with 400,000 points</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- <div>
+    <div>
         <div>
             <div class="videobox">
-                <video loop autoplay muted playsinline src="horn-8_amp.mp4"></video>
+                <video loop autoplay muted playsinline src="dig2.mp4"></video>
             </div>
         </div>
         <div>
-            <div>
+            <div class="jp_block">
                 <h4>Special-purpose computers for digital holography</h4>
-                <p>Special-purpose computer for electroholography on embedded system.
-                I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC" that is large-scale system LSI with ARM CPU and FPGA (Field Programmable Gate Array).</p>
+                <p>デジタルホログラフィ (digital holography) は電子ホログラフィとは逆の計算を行います．すなわち，カメラで撮影したホログラムから再生像の計算を行います．一度の撮影で，任意の奥行き方向にピントを合わせた再生像を得ることができます．瞬間的な3次元 (3Ｄ) 情報の記録や動的現象の記録が可能であることから注目されています．一方で，高速現象を記録する場合，フレームレートが数万から数億フレームになり，再構成画像の計算時間が問題となっています．開発した専用計算機は一般的なPCと比べ68倍高速に計算可能です．</p>
+                <p>(動画): 落下するグラニュー糖粒子の様子．ハイスピードカメラを用いて，約1/30万秒の露光時間で撮影したホログラムから計算した再構成画像．</p>
+                <h5>Related articles</h5>
+                <ul>
+                    <li><a href="https://doi.org/10.1117/1.OE.59.5.054105">Special-purpose computer for digital holographic high-speed 3D imaging</a></li>
+                </ul>
+            </div>
+            <div class="en_block">
+                <h4>Special-purpose computers for digital holography</h4>
+                <p>Digital holography performs the opposite calculations of electroholography. That is, it calculates the reconstructed images from the hologram captured by the camera. The reconstructed images can be focused in any depth direction in a single shot. Digital holography is attracting attention because it can record instantaneous three-dimensional (3D) information and record dynamic phenomena. However, when recording high-speed phenomena, the frame rate ranges from tens of thousands to hundreds of millions, and the calculation time of the reconstructed images is a problem. The developed computer has achieved a calculation time 68 times faster than that of a personal computer.</p>
+                <p>(Movie): The reconstructed images were calculated from holograms captured with an exposure time of ∼1/300,000s using a high-speed polarization camera to falling granulated sugar particles.</p>
+                <h5>Related articles</h5>
+                <ul>
+                    <li><a href="https://doi.org/10.1117/1.OE.59.5.054105">Special-purpose computer for digital holographic high-speed 3D imaging</a></li>
+                </ul>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
 
 
@@ -336,6 +351,7 @@ I developed a compact holographic computer using "Xilinx Zynq UltraScale+ MPSoC"
 
 <h3>外部資金・奨学金等 Grant・Scholarship</h3>
 <ol reversed class="pub_list">
+	<li>日本学術振興会 特別研究員奨励費 , 1,100千円 (2019)</li>
 	<li>情報処理学会 大会奨励賞 (旧学術奨励賞), 10千円 (2019)</li>
 	<li>コニカミノルタ光みらい若手奨励金, 300千円 (2019)</li>
 	<li>千葉大学 国際交流事業若手先導人材育成支援プログラム, 252千円 (2019)</li>
