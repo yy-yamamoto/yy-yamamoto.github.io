@@ -274,8 +274,18 @@ ol.pub_list:not(.jsena_pub_list) li:not(.pub_year){
 } 
 
 ol.jsena_pub_list li:not(.pub_year)::before{
+    counter-increment: cnt -1;
+    content: "[" counter(cnt) "] ";
+} 
+
+/* ol.reversedorder li:not(.pub_year)::before {
 	counter-increment: cnt -1;
 	content: "[" counter(cnt) "] ";
+}  */
+
+ol.incrementorder li:not(.pub_year)::before {
+	counter-increment: cnt;
+	/* content: "[" counter(cnt) "] "; */
 } 
 
 
