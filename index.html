@@ -120,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="jp_block">
 <h3>研究テーマ</h3>
 <p>電子ホログラフィ向け専用計算機の開発を行っています．電子ホログラフィ (electroholography) は光の干渉・回折を利用した技術です．人間が奥行きを知覚するために必要な奥行き手がかりをすべて再現可能であり，観察者に負担をかけない理想的な3次元技術として注目を集めています．電子ホログラフィでは，計算によって生成されるComputer-Generated Hologram (CGH) を利用しますが，その計算量は膨大であり，現状の計算機性能では実現が困難です．</p>
-<p>電子ホログラフィ実現のため，アルゴリズム，計算回路レベルでの高速化の研究を行っています．特にField-Programmable Gate Array (FPGA) を用いて特定の計算に特化した計算システムを開発することにより，計算性能の飛躍的向上を目指しています．FPGAでは，CGH計算に特化した計算回路を複数構築し，計算効率と計算並列度を向上することにより，CPUやGraphics Processing Unit (GPU) と比べ高速な計算が可能となります．</p>
+<p>電子ホログラフィ実現のため，アルゴリズム，計算回路レベルでの高速化の研究を行っています．とくにField-Programmable Gate Array (FPGA) を用いて特定の計算に特化した計算システムを開発することにより，計算性能の飛躍的向上を目指しています．FPGAでは，CGH計算に特化した計算回路を複数構築し，計算効率と計算並列度を向上することにより，CPUやGraphics Processing Unit (GPU) と比べ高速な計算が可能となります．</p>
 
 <h3>研究キーワード</h3>
 <p>専用計算機, FPGA, 電子ホログラフィ, デジタルホログラフィ, 組み込みシステム</p>
@@ -148,7 +148,7 @@ In FPGAs, multiple circuits specialized for CGH computation are constructed to i
         <div>
             <div class="jp_block">
                 <h4>Special-purpose computers for electroholography</h4>
-                <p>CGHを高速に計算する専用計算機の開発を行っています．開発したシステムは，約40万点からなる点群モデルから，時空分割法を用いて200万画素 (1920×1080)のホログラムを毎秒60フレームで更新することができます．開発した専用計算機を用いて高精細なビデオホログラフィーのデモンストレーションに成功しました．</p>
+                <p>CGHを高速に計算する専用計算機の開発を行っています．開発したシステムは，約40万点の点群モデルから，時空分割法を用いて200万画素 (1920×1080)のホログラムを毎秒60フレームで更新できます．開発した専用計算機を用いて高精細なビデオホログラフィーのデモンストレーションに成功しました．</p>
                 <h5>Related articles</h5>
                 <ul>
 					<li><a href="https://doi.org/10.1364/OE.471720">HORN-9: Special-purpose computer for electroholography with Hilbert transform</a></li>
@@ -175,7 +175,7 @@ In FPGAs, multiple circuits specialized for CGH computation are constructed to i
         <div>
             <div class="jp_block">
                 <h4>Special-purpose computers for digital holography</h4>
-                <p>デジタルホログラフィ (digital holography) は電子ホログラフィとは逆の計算を行います．すなわち，カメラで撮影したホログラムから再生像の計算を行います．一度の撮影で，任意の奥行き方向にピントを合わせた再生像を得ることができます．瞬間的な3次元 (3Ｄ) 情報の記録や動的現象の記録が可能であることから注目されています．一方で，高速現象を記録する場合，フレームレートが数万から数億フレームになり，再構成画像の計算時間が問題となっています．開発した専用計算機は一般的なPCと比べ68倍高速に計算可能です．</p>
+                <p>デジタルホログラフィ (digital holography) は電子ホログラフィとは逆の計算を行います．すなわち，カメラで撮影したホログラムから再生像の計算を行います．一度の撮影で，任意の奥行き方向にピントを合わせた再生像を得ることができます．瞬間的な3次元 (3D) 情報の記録や動的現象の記録が可能であることから注目されています．一方で，高速現象を記録する場合，フレームレートが数万から数億フレームになり，再構成画像の計算時間が問題となっています．開発した専用計算機は一般的なPCと比べ68倍高速に計算可能です．</p>
                 <p>（動画）: 落下するグラニュー糖粒子の様子．ハイスピードカメラを用いて，約1/30万秒の露光時間で撮影したホログラムから計算した再構成画像．</p>
                 <h5>Related articles</h5>
                 <ul>
@@ -595,3 +595,4 @@ document.querySelectorAll('.trans')
 </script>
 </body>
 </html>
+
