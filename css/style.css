@@ -413,7 +413,7 @@ ol.incrementorder li:not(.pub_year)::before {
 
 #contents div.research_projects > div:nth-child(n+2){
     padding-top: 14px;
-    border-top: 1.5px solid #ccc;
+    /* border-top: 1.5px solid #ccc; */
 }
 #contents div.research_projects > div{
     display: flex;
