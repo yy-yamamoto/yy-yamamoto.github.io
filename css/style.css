@@ -537,6 +537,26 @@ ol.incrementorder li:not(.pub_year)::before {
 	color: #666;
 }
 
+.refereed::before {
+	display        : inline-block;
+	content        : "REFEREED";
+	background     : #ff0000;
+	color          : #ffffff;
+	font-weight    : bold;
+	font-size      : 10pt;
+	letter-spacing : -1px;
+	line-height    : 1;
+	vertical-align : top;
+	margin         : 0;
+	padding        : 2px;
+	transform      : scale(0.7)
+					 translateX(10%);
+}
+
+.refereed a{
+	color: #666;
+}
+
 .invite::before {
 	display        : inline-block;
 	content        : "INVITE";
